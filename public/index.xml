@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Makers Hobby</title>
+    <link>http://www.makershobby.com/index.xml</link>
+    <description>Recent content on Makers Hobby</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 18 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.makershobby.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android Thigns lector de codigo de barras</title>
+      <link>http://www.makershobby.com/post/androidthingsbarcode/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.makershobby.com/post/androidthingsbarcode/</guid>
+      <description>
+
+&lt;h4 id=&#34;que-necesitamos&#34;&gt;¿Que necesitamos?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1 x Rasberry Pi 3 Model B&lt;/li&gt;
+&lt;li&gt;1 x Tarjeta SD 8G&lt;/li&gt;
+&lt;li&gt;1 X Lector de codigo de barras Datalogic GFS4400&lt;/li&gt;
+&lt;li&gt;1 X Plaxa adaptadora&lt;/li&gt;
+&lt;li&gt;1 X Cable serie cruzado&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;software&#34;&gt;Software&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android Studio&lt;/li&gt;
+&lt;li&gt;Android Things&lt;/li&gt;
+&lt;li&gt;Conocimientos de programación Java y Android.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;paso-1-instalar-android-things&#34;&gt;Paso 1: Instalar Android Things&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-2-adaptador-rs232-para-raspberry-pi&#34;&gt;Paso 2: Adaptador RS232 para Raspberry Pi&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-3-lector-de-código-de-barras&#34;&gt;Paso 3: Lector de Código de barras&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-4-cruzador-rs232&#34;&gt;Paso 4: Cruzador RS232&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-5-codigo-app-android-things&#34;&gt;Paso 5: Codigo App Android Things&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-6-pruebas&#34;&gt;Paso 6: Pruebas&lt;/h4&gt;
+
+&lt;h4 id=&#34;esquema&#34;&gt;Esquema&lt;/h4&gt;
+
+&lt;h4 id=&#34;fuentes&#34;&gt;Fuentes&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hola Mundo</title>
+      <link>http://www.makershobby.com/post/holamundo/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.makershobby.com/post/holamundo/</guid>
+      <description>&lt;p&gt;Hola mundo este es mi primer posrt de prueba para &lt;strong&gt;Makers Hobby&lt;/strong&gt; espero que este proyecto
+crezca con el apoyo de la comunidad.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://www.makershobby.com/about/</link>
+      <pubDate>Tue, 18 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.makershobby.com/about/</guid>
+      <description>
+
+&lt;p&gt;90&amp;rsquo;s slow-carb Schlitz Shoreditch mixtape typewriter, wayfarers Austin keffiyeh
+Helvetica artisan flexitarian. Health goth vinyl scenester pickled kitsch.
+Organic slow-carb stumptown freegan, PBR ugh chia Intelligentsia pork belly
+locavore retro kale chips. Tofu put a bird on it squid tattooed beard master
+cleanse, mumblecore keytar mustache blog direct trade PBR&amp;amp;B quinoa.&lt;/p&gt;
+
+&lt;h4 id=&#34;education&#34;&gt;Education&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2015 - Master of Arts in Wine Tasting, University of British Columbia&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2013 - Bachelor of Arts , University of British Columbia&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;publications&#34;&gt;Publications&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Painting with condiments (2015)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;places-i-ve-worked&#34;&gt;Places I&amp;rsquo;ve worked&lt;/h4&gt;
+
+&lt;p&gt;I don&amp;rsquo;t work :(&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

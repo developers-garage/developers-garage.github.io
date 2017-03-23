@@ -1,0 +1,44 @@
+baseURL = "http://www.makershobby.com/"
+title = "Makers Hobby"
+languageCode = "es"
+theme = "HugoMDL"
+MetaDataFormat = "yaml"
+
+[permalinks]
+	page = "/:title/"
+	about = "/:filename/"
+
+[params]
+  author = "Makers Hobby"
+  avatar = "/images/avatar.png"
+  background = "/images/background.jpg"
+  description = "A place to publish my incomprehensible ramblings" #meta description
+  image = "/images/avatar-192x210.png" #for frontpage profile card
+  mdlPrimary = "grey"
+  mdlSecondary = "orange"
+  website = "example.com"
+  email = "Firstname@example.com"
+  twitter = "https://twitter.com/makershobby"
+  github = "https://github.com/makershobby/"
+  linkedin = "https://linkedin.com/in/makershobby/"
+  facebook = "https://facebook.com/makershobby/"
+  copyrightyear = "2017"
+  frontpageposts = 6 #number of post cards to display on frontpage
+
+# Fully customizable header menu
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = -200
+[[menu.main]]
+  name = "Articulos"
+  url = "/post/"
+  weight = -180
+[[menu.main]]
+  name = "Proyectos"
+  url = "/project/"
+  weight = -160
+[[menu.main]]
+  name = "Sobre Nosotros"
+  url = "/about/"
+  weight = "-140"

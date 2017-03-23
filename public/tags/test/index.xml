@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Makers Hobby</title>
+    <link>http://www.makershobby.com/tags/test/index.xml</link>
+    <description>Recent content in Test on Makers Hobby</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <atom:link href="http://www.makershobby.com/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android Thigns lector de codigo de barras</title>
+      <link>http://www.makershobby.com/post/androidthingsbarcode/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.makershobby.com/post/androidthingsbarcode/</guid>
+      <description>
+
+&lt;h4 id=&#34;que-necesitamos&#34;&gt;¿Que necesitamos?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1 x Rasberry Pi 3 Model B&lt;/li&gt;
+&lt;li&gt;1 x Tarjeta SD 8G&lt;/li&gt;
+&lt;li&gt;1 X Lector de codigo de barras Datalogic GFS4400&lt;/li&gt;
+&lt;li&gt;1 X Plaxa adaptadora&lt;/li&gt;
+&lt;li&gt;1 X Cable serie cruzado&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;software&#34;&gt;Software&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android Studio&lt;/li&gt;
+&lt;li&gt;Android Things&lt;/li&gt;
+&lt;li&gt;Conocimientos de programación Java y Android.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;paso-1-instalar-android-things&#34;&gt;Paso 1: Instalar Android Things&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-2-adaptador-rs232-para-raspberry-pi&#34;&gt;Paso 2: Adaptador RS232 para Raspberry Pi&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-3-lector-de-código-de-barras&#34;&gt;Paso 3: Lector de Código de barras&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-4-cruzador-rs232&#34;&gt;Paso 4: Cruzador RS232&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-5-codigo-app-android-things&#34;&gt;Paso 5: Codigo App Android Things&lt;/h4&gt;
+
+&lt;h4 id=&#34;paso-6-pruebas&#34;&gt;Paso 6: Pruebas&lt;/h4&gt;
+
+&lt;h4 id=&#34;esquema&#34;&gt;Esquema&lt;/h4&gt;
+
+&lt;h4 id=&#34;fuentes&#34;&gt;Fuentes&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hola Mundo</title>
+      <link>http://www.makershobby.com/post/holamundo/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.makershobby.com/post/holamundo/</guid>
+      <description>&lt;p&gt;Hola mundo este es mi primer posrt de prueba para &lt;strong&gt;Makers Hobby&lt;/strong&gt; espero que este proyecto
+crezca con el apoyo de la comunidad.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
