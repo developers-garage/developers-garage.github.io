@@ -30,16 +30,14 @@ menu: ""           # set "main" to add this content to the main menu
 ---
 
 
-En este articulo vamos a ver como usar un lector de codigo con Android Things, para ello utilizaremos una Raspberry Pi y un lector Datalogic GFS4400.
+En este articulo vamos a ver como usar el puerto serie que incorpora la Raspberry Pi. Como ejemplo usaremos un lector de codigo de barras Datalogic GFS4400.
 
 #### ¿Que necesitamos?
 
-* 1 x Rasberry Pi 3 Model B
-* 1 x Tarjeta micro SD 8G class 10
-* 1 x Adaptador micro SD a USB
+* 1 x Rasberry Pi 3 Model B con Android Things
 * 1 X Lector de codigo de barras Datalogic GFS4400
 * 1 X Placa adaptadora
-* 1 X Cable serie cruzado
+* 1 X Cable serie cruzado DB9
 
 #### Software que utilizaremos
 
@@ -47,18 +45,53 @@ En este articulo vamos a ver como usar un lector de codigo con Android Things, p
 * Android Things
 * Conocimientos de programación Java y Android.
 
+Antes de empezar te recomendamos que eches un vistazo al articulo [Android Things Comenzando](), donde podras preparar la base para seguir este articulo.
+
 #### Paso 1: Desactivar Depuración Puerto Serie
+
+Por defecto el puerto serie de la Raspberry Pi se utiliza para depuración, para evirar conflictos en nuestros proyectos que utilicen este puerto, tendremos que desactivar la depuración.
+
+Sacaremos la tarjeta sd de la Raspberry Pi y la conectaremos a nuestro ordenador, buscamos el archivo cmdline.txt y el parametro console lo dejaremos de este modo
+
+```
+console=tty0
+```
+Guardamos el fichero y colocamos de nuevo la SD en la Raspberry Pi.
 
 #### Paso 2: Adaptador RS232 para Raspberry Pi
 
-#### Paso 3: Lector de Código de barras
+El puerto serie de la Raspberry Pi funciona con niveles de tensión TTL a 3.3v, debemos tener cuidado de no conectar dispositivos que superen el voltaje.
 
-#### Paso 4: Cruzador RS232
+En el ejemplo que mostraremos usamos un lector con puertomserie estandar con niveles de +/-12v por eso utilizamos una placa que adpta los nivelez de voltaje. Es muy fácil de conseguir por Internet.
+
+IMAGEN DE LA TARJETA
+
+Para conectar la placa de adaptació a la Raspberry Pi lo haremos siguiendo este esquema.
+
+ESQUEMA DE CONEXION
+
+
+#### Paso 3: Lector de código de barras
+
+#### Paso 4: Cable cruzado RS232
+
+En nuestro ejemplo necesitamos cruzar los cables de RX y TX del lector con los de la Raspberry Pi, para qud podamos leer los codigos de barras, auque podemos conseguir comprarlos en alguna tienda de electronica, hemos decido hacernos uno.
+
+Sigúendo este esquema y dos conectores DB9 macho.
+
+ESQUEMA DEL CABLE
+
+Nos queda el siguiente montaje
+
+FOTO DEL MONTAJE
+
 
 #### Paso 5: Codigo App Android Things
 
-#### Paso 6: Pruebas 
+Con todo montado podemos empezar la parte de programación, suponiendo que partimos de un proyecto para Android Things correctamente cofigurado.
 
-#### Esquema
+
+
+#### Paso 6: Pruebas 
 
 #### Fuentes
