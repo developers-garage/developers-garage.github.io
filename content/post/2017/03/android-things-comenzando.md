@@ -101,7 +101,7 @@ De este modo ya estamos conectados y listos para poder hacer nuestra primera apl
 
 #### Paso 3: Configuración de la Wifi (Opcional)
 
-Si nos interesa podemos conectar con una red wifi y asi no depender del cable de red. Podemos configurarlo con el siguiente comando:
+Como sabeis Raspberry Pi 3 lleva integrada el modulo wifi y esta esta soportado por Android Things, podemos conectar con una red wifi y asi no depender del cable de red. Para configurarlo utilizamremos el siguiente comando:
 
 ```
 adb shell am startservice ^
@@ -164,21 +164,30 @@ Con Ctrl+C podemos parar el ping.
 
 #### Paso 4: App Android Things - Hello World!!
 
-Despues de tanta configuración llegamos a la parte interesan, que es crear nuestra primera App para Android Things. Vereis que practicamente igual que crear una App para otras plataformas de Android, ya sea móvil, tv, auto.
+Despues de tanta configuración llegamos a la parte interesante, que es crear nuestra primera App para Android Things. Vereis que es practicamente igual que crear una App para otras plataformas de Android, ya sea móvil, tv, auto.
 
-Lo primero es abrir Android Studio y crear un nuevo proyecto, 
+Lo primero es abrir Android Studio y crear un nuevo proyecto con el API 24.
 
-build.gradle
+![Android Studio API](/images/2017/03/android-things-comenzando/android-studio-new-proyect-api.png)
+
+>Como Android Things, en el momento de escribir este articulo, es una preview Android Studio no esta del todo automatizado por lo que deberemos añadir algunas cositas a mano.
+
+
+En el archivo build.gradle a nivel de la app, añadiremos la siguiente linea dentro de la sección dependencies.
+
 ```
  provided 'com.google.android.things:androidthings:0.2-devpreview'
 ```
+Para aplicar los cambios clicamos en "Sync Now", Android Studio se encargara de bajar las dependencias.
 
-manifest
+En el archivo de AndroidManifest.xml dentro de la sección "application" añadimos la siguiente linea.
 
 ```
 <uses-library android:name="com.google.android.things"/>
 
 ```
+
+Finalmente dentro de la seccion de declaración de la "activity" principal o inicial incluiremos un intent-filter como el siguiente, este indica cual es la applicacion que arrancara automaticamente cuando encendemos la Raspberry Pi. 
 
 ```
 <!-- Launch activity automatically on boot -->
@@ -188,3 +197,11 @@ manifest
     <category android:name="android.intent.category.DEFAULT"/>
 </intent-filter>
 ```
+
+> Al tratarse de una plataforma pensada para el Internet de las Cosas, Android Things no tienen una interface de usuario donde podamos cambiar de aplicaciones, el interface grafico queda en manos del desarrollador.
+
+Por ultimo solo nos queda enviar y ejecutar la aplicación, clicando en el boton "Run App" el famoso Play verde. Nos aparece la ventana con la lista de dispositivos, seleccionamos la Raspberry y esperamos a que termone el proceso de envio y ejecucción.
+
+En breve veremos aparecer la aplicacción con el texto Hello World.
+
+Hemos llegado al final de este articulo, de la serie Android Things dejando la base preparada. En los proximos articulos veremos como utilizar el puerto serie, usar las GPIO para controlar reles, leds y pulsadores, crontrolar servos y I2C
