@@ -1,5 +1,5 @@
 ---
-title: "Android Things lector de codigo de barras"
+title: "Android Things UART y Lector de codigo de barras"
 description: "Como conectar y leer codigos de barras con Android Things"
 date: "2017-03-18"
 draft: false
@@ -30,7 +30,7 @@ menu: ""           # set "main" to add this content to the main menu
 ---
 
 
-En este articulo vamos a ver como usar el puerto serie que incorpora la Raspberry Pi. Como ejemplo usaremos un lector de codigo de barras Datalogic GFS4400.
+En este articulo vamos a ver como usar el UART o puerto serie que incorpora la Raspberry Pi. Como ejemplo usaremos un lector de codigo de barras Datalogic GFS4400.
 
 #### ¿Que necesitamos?
 
@@ -49,9 +49,9 @@ Antes de empezar te recomendamos que eches un vistazo al articulo [Android Thing
 
 #### Paso 1: Desactivar Depuración Puerto Serie
 
-Por defecto el puerto serie de la Raspberry Pi se utiliza para depuración, para evirar conflictos en nuestros proyectos que utilicen este puerto, tendremos que desactivar la depuración.
+Por defecto la UART de la Raspberry Pi se utiliza para depuración, para evitar conflictos en nuestros proyectos, tendremos que desactivar la depuración.
 
-Sacaremos la tarjeta sd de la Raspberry Pi y la conectaremos a nuestro ordenador, buscamos el archivo cmdline.txt y el parametro console lo dejaremos de este modo
+Sacaremos la tarjeta SD de la Raspberry Pi y la conectaremos a nuestro ordenador, buscamos el archivo cmdline.txt y el parametro console lo dejaremos de este modo
 
 ```
 console=tty0
@@ -60,9 +60,7 @@ Guardamos el fichero y colocamos de nuevo la SD en la Raspberry Pi.
 
 #### Paso 2: Adaptador RS232 para Raspberry Pi
 
-El puerto serie de la Raspberry Pi funciona con niveles de tensión TTL a 3.3v, debemos tener cuidado de no conectar dispositivos que superen el voltaje.
-
-En el ejemplo que mostraremos usamos un lector con puertomserie estandar con niveles de +/-12v por eso utilizamos una placa que adpta los nivelez de voltaje. Es muy fácil de conseguir por Internet.
+La UART de la Raspberry Pi funciona con niveles de tensión TTL a 3.3v, debemos tener cuidado de no conectar dispositivos que superen el voltaje. En el ejemplo que mostraremos usamos un lector con con niveles de +/-12v por eso utilizamos una placa que adpta los nivelez de voltaje, es muy fácil de conseguir por Internet.
 
 IMAGEN DE LA TARJETA
 
@@ -73,9 +71,9 @@ ESQUEMA DE CONEXION
 
 #### Paso 3: Lector de código de barras
 
-#### Paso 4: Cable cruzado RS232
+#### Paso 4: Cruzando TX y RX
 
-En nuestro ejemplo necesitamos cruzar los cables de RX y TX del lector con los de la Raspberry Pi, para qud podamos leer los codigos de barras, auque podemos conseguir comprarlos en alguna tienda de electronica, hemos decido hacernos uno.
+En este ejemplo utilizaremos la comunicación con tres hilos, necesitaremos cruzar los pins TX y RX del lector con los de la Raspberry, auque podemos conseguir comprar un cable cruzado en alguna tienda de electronica, hemos decido hacernos uno.
 
 Sigúendo este esquema y dos conectores DB9 macho.
 
