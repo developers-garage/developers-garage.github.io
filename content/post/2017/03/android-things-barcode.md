@@ -56,9 +56,9 @@ Para facilitar la grabación de la SD uitlizaremos el programa [Etcher](https://
 
 La primera pantalla que veremos de Etcher nos pide donde tenemos descargada la imagen de Android Things, no es necesario descromprimir el zip que hemos decargado, Etcher se encargara de todo.
 
-![Etcher seleccionar archivo de imagen](/images/etcher-01-min.png)
+![Etcher seleccionar archivo de imagen](/images/2017/03/android-things-barcode/etcher-01-min.png)
 
-![Etcher seleccionar unidad tarjeta sd](/images/etcher-02-min.png)
+![Etcher seleccionar unidad tarjeta sd](/images/2017/03/android-things-barcode/etcher-02-min.png)
 
 Ahora ya tenemos la SD con el sistema instalado, podemos insertarla en la Raspberry Pi, conectar el cable de red a nuestro router y arrancar, al ser la primra vez os aconsejo que conecteis un monitor para ver que todo funciona correctamente, tambien nos servira para ver la IP que asigana.
 
