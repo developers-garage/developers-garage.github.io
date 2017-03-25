@@ -35,9 +35,10 @@ En este articulo vamos a ver como usar un lector de codigo con Android Things, p
 #### ¿Que necesitamos?
 
 * 1 x Rasberry Pi 3 Model B
-* 1 x Tarjeta SD 8G class 10
+* 1 x Tarjeta micro SD 8G class 10
+* 1 x Adaptador micro SD a USB
 * 1 X Lector de codigo de barras Datalogic GFS4400
-* 1 X Plaxa adaptadora
+* 1 X Placa adaptadora
 * 1 X Cable serie cruzado
 
 #### Software que utilizaremos
@@ -46,35 +47,17 @@ En este articulo vamos a ver como usar un lector de codigo con Android Things, p
 * Android Things
 * Conocimientos de programación Java y Android.
 
-#### Paso 1: Instalar Android Things
+#### Paso 1: Desactivar Depuración Puerto Serie
 
-Lo primero que necesitamos es tener una placa **Raspberry Pi 3 Model B** con Android Things instalado, si ya lo tines puedes saltarte este paso e ir directamante al Paso 2.
+#### Paso 2: Adaptador RS232 para Raspberry Pi
 
-Para facilitar la grabación de la SD uitlizaremos el programa [Etcher](https://etcher.io/), comenzaremos por descargarlo e instalarlo. Tambien necesitarmos la ultima imagen de Android Things para Raspberry Pi, actualmente estan en la versión preview 2, podemos descargarla desde la página [Android Things](https://developer.android.com/things/index.html)
+#### Paso 3: Lector de Código de barras
 
->Neceistaremos almenos una tarjeta de 4G de clase 10. Pero es recomendable una sd de 8G, para que nos queda suficiente espacio libre para instalar aplicaciones.
+#### Paso 4: Cruzador RS232
 
-La primera pantalla que veremos de Etcher nos pide donde tenemos descargada la imagen de Android Things, no es necesario descromprimir el zip que hemos decargado, Etcher se encargara de todo.
+#### Paso 5: Codigo App Android Things
 
-![Etcher seleccionar archivo de imagen](/images/2017/03/android-things-barcode/etcher-01-min.png)
-
-![Etcher seleccionar unidad tarjeta sd](/images/2017/03/android-things-barcode/etcher-02-min.png)
-
-Ahora ya tenemos la SD con el sistema instalado, podemos insertarla en la Raspberry Pi, conectar el cable de red a nuestro router y arrancar, al ser la primra vez os aconsejo que conecteis un monitor para ver que todo funciona correctamente, tambien nos servira para ver la IP que asigana.
-
-> Para programar Android Things tendremos que conectar por red (cable, wifi) y usar el programa adb.
-
-#### Paso 2: Desactivar Depuración Puerto Serie
-
-#### Paso 3: Adaptador RS232 para Raspberry Pi
-
-#### Paso 4: Lector de Código de barras
-
-#### Paso 5: Cruzador RS232
-
-#### Paso 6: Codigo App Android Things
-
-#### Paso 7: Pruebas 
+#### Paso 6: Pruebas 
 
 #### Esquema
 
