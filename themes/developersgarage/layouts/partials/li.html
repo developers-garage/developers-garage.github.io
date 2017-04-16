@@ -1,0 +1,68 @@
+{{ $baseurl := .Site.BaseURL }}
+    <!-- technology-top -->
+    {{ partial "share.html" . }}
+    <div class="tc-ch">
+
+        <div class="tch-img">
+            <a href="singlepage.html"><img src="images/1.jpg" class="img-responsive" alt="" /></a>
+        </div>
+        {{if .Params.tags }}
+            <span class="blog blue">
+            {{ range $index, $tag := .Params.tags }}
+                <a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>
+            {{ end }}
+            </span>
+        {{end}}
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Ut enim ad minim veniam, quis nostrud eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+    <section class="post-excerpt">
+        {{if isset .Params "excerpt" }}
+            {{ if .Params.excerpt }}
+                <p>{{ .Params.excerpt }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+            {{end}}
+        {{else}}
+            <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+        {{end}}
+    </section>
+    <div class="blog-poast-info">
+      {{$author:= .Site.Params.author}}
+      {{if .Params.author }}
+          {{$author:= .Params.author}}
+          {{if isset .Site.Data.authors $author}}
+              {{$author := index .Site.Data.authors .Params.author }}
+          {{end}}
+      {{end}}
+        <ul>
+            <li>
+              {{ if isset $author "thumbnail" }}
+                  <img class="author-thumb" src="{{ .Site.BaseURL }}{{ $author.thumbnail }}" alt="Author image" nopin="nopin" />
+              {{else if .Site.Params.logo }}
+                  <img class="author-thumb" src="{{ .Site.BaseURL }}{{.Site.Params.logo}}" alt="Author image" nopin="nopin" />
+              {{ else }}
+                  <i class="glyphicon glyphicon-user"> </i>
+              {{end}}
+              <a class="admin" href="#">
+              {{ if isset $author "name" }}
+                  {{$author.name}}
+              {{else if .Site.Params.author}}
+                  {{.Site.Params.author}}
+              {{end}}
+              </a>
+            </li>
+            <li><i class="glyphicon glyphicon-calendar"> </i>
+              <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                  {{ .Date.Format "2 Jan 2006" }}
+              </time>
+            </li>
+            <li><i class="glyphicon glyphicon-comment"> </i><a class="p-blog" href="#">3 Comments </a></li>
+            <li><i class="glyphicon glyphicon-heart"> </i><a class="admin" href="#">5 favourites </a></li>
+            <li><i class="glyphicon glyphicon-eye-open"> </i>1.128 views</li>
+        </ul>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- technology-top -->

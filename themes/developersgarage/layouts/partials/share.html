@@ -1,0 +1,18 @@
+{{ if ne .Params.share false}}
+<div class="soci">
+    <ul>
+        <li>
+            <a href="https://twitter.com/share?text={{ .Title | safeHTML}}&nbsp;-&nbsp;{{ .Site.Title }}&amp;url={{ .Permalink }}" class="facebook-1"> </a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/share?url={{ .Permalink }}" class="facebook-1 twitter"> </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" class="facebook-1 chrome"> </a>
+        </li>
+        <li><a href="#"><i class="glyphicon glyphicon-envelope"> </i></a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-print"> </i></a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-plus"> </i></a></li>
+    </ul>
+</div>
+{{end}}
